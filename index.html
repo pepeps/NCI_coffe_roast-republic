@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roast Republic | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">Roast <span>Republic</span></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Freshly Roasted Coffee, Delivered to Your Door.</h1>
+          <p>Sourced from ethical farms, roasted in small batches, and shipped at peak freshness. Welcome to Roast Republic.</p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn primary">Shop Coffee</a>
+            <a href="about.html" class="btn ghost">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="tagline">Roast of the Week</p>
+          <h2>Guatemalan Sunrise</h2>
+          <p class="hero-notes">Notes of chocolate, orange, and honey.</p>
+          <p class="hero-price">€13.50 / 250g</p>
+          <a href="products.html" class="btn secondary">Try it now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <h2 class="section-title">Featured Blends</h2>
+        <p class="section-subtitle">Curated coffees for every morning ritual.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>House Espresso</h3>
+            <p class="card-meta">Rich · Balanced · Chocolate</p>
+            <p class="card-text">Designed for espresso and milky drinks, with a smooth body and a long, sweet finish.</p>
+            <p class="card-price">€11.90 / 250g</p>
+          </article>
+          <article class="card">
+            <h3>Nordic Light Roast</h3>
+            <p class="card-meta">Bright · Floral · Citrus</p>
+            <p class="card-text">For filter lovers who enjoy high clarity, delicate florals and sparkling acidity.</p>
+            <p class="card-price">€12.80 / 250g</p>
+          </article>
+          <article class="card">
+            <h3>Midnight Decaf</h3>
+            <p class="card-meta">Sweet · Nutty · No caffeine</p>
+            <p class="card-text">Swiss Water processed decaf that tastes like the real thing. Perfect for late nights.</p>
+            <p class="card-price">€12.20 / 250g</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="container newsletter">
+        <div class="newsletter-text">
+          <h2>Join the Republic.</h2>
+          <p>Sign up to get brew tips, early access to new coffees, and exclusive discounts.</p>
+        </div>
+        <form class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email</label>
+          <input type="email" id="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Roast Republic. All rights reserved.</p>
+      
+    </div>
+  </footer>
+
+  <script>
+    // Simple script to keep the year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
