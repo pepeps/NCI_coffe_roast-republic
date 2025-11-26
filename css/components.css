@@ -1,0 +1,186 @@
+/* Shared components and module styles */
+
+/* Card grids and details */
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.card-meta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--coffee-muted);
+  margin-bottom: 0.9rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.9rem;
+  color: #3b2b22;
+}
+
+.card-price {
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+/* Button variants */
+.btn.primary {
+  background-color: var(--coffee-brown);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(75, 45, 30, 0.3);
+}
+
+.btn.primary:hover {
+  background-color: var(--coffee-brown-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(75, 45, 30, 0.35);
+}
+
+.btn.secondary {
+  background-color: #fff;
+  color: var(--coffee-brown-dark);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn.ghost {
+  background: transparent;
+  border-color: var(--border-soft);
+  color: var(--coffee-brown-dark);
+}
+
+.btn.ghost:hover {
+  background-color: var(--coffee-cream);
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.newsletter-text h2 {
+  margin-bottom: 0.4rem;
+}
+
+.newsletter-text p {
+  margin: 0;
+  color: var(--coffee-muted);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  min-width: min(260px, 100%);
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-soft);
+  font: inherit;
+}
+
+/* Page header */
+.page-header {
+  padding-block: 2.4rem 1.8rem;
+  background: linear-gradient(to bottom, #f7eee6, #ffffff);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.page-header h1 {
+  margin-bottom: 0.4rem;
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--coffee-muted);
+}
+
+/* Layout helpers */
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  gap: 2rem;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0 0;
+  font-size: 0.95rem;
+}
+
+.checklist li::before {
+  content: "•";
+  margin-right: 0.4rem;
+  color: var(--coffee-brown);
+}
+
+/* Form controls */
+.contact-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+}
+
+.contact-form label {
+  font-size: 0.88rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font: inherit;
+  padding: 0.5rem 0.7rem;
+  border-radius: 9px;
+  border: 1px solid var(--border-soft);
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.newsletter-form input[type="email"]:focus {
+  outline: 2px solid rgba(107, 62, 46, 0.24);
+  outline-offset: 1px;
+}
+
+.form-status {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  color: var(--coffee-brown-dark);
+}
+
+/* Responsive tweaks for shared components */
+@media (max-width: 840px) {
+  .newsletter {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .two-column {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form input[type="email"] {
+    min-width: 100%;
+  }
+}
