@@ -102,8 +102,19 @@
   </footer>
 
   <!--scripts-->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  
-  </body>
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      statusEl.textContent = 'Thank you! Your message has been sent.';
+      form.reset();
+    });
+  </script>
+
+</body>
 
 </html>
