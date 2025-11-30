@@ -1,3 +1,49 @@
+/* blog page style */
+.blog_grid {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.blog_article {
+  border-radius: var(--radius-lg);
+  /*round corner*/
+  padding: 1.4rem 1.5rem;
+  border: 1px solid var(--border-soft);
+  /*it's a soft border color*/
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(34, 25, 16, 0.04);
+  /*shadow effect...not that obvious*/
+}
+
+.blog_title {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--coffee-muted);
+  /*light coffee color*/
+  margin-bottom: 0.6rem;
+}
+
+.blog_article h2 {
+  margin: 0 0 0.5rem;
+}
+
+.outline {
+  font-size: 0.96rem;
+  color: #3b2b22;
+}
+
+.blog-link {
+  display: inline-flex;
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: var(--coffee-brown);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+
+/* contact page style */
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
