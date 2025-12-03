@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roast Republic | Locations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">Roast <span>Republic</span></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html" class="active">Locations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Find Roast Republic</h1>
+        <p>Visit our cafés in Ireland or order beans online across Europe.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Cafés</h2>
+        <div class="locations-grid">
+          <article class="location-card">
+            <h3>Dublin Roastery &amp; Café</h3>
+            <p class="location-address">123 Grand Canal Street, Dublin 2</p>
+            <p class="location-hours"><strong>Hours:</strong> Mon–Fri 7:30–18:00 · Sat–Sun 9:00–17:00</p>
+            <p class="location-note">Our main roastery and training space. Espresso bar, filter menu, and bakery partners.</p>
+          </article>
+
+          <article class="location-card">
+            <h3>Cork City Café</h3>
+            <p class="location-address">45 Market Lane, Cork</p>
+            <p class="location-hours"><strong>Hours:</strong> Mon–Sat 8:00–17:30 · Sun 10:00–16:00</p>
+            <p class="location-note">Cosy neighbourhood spot with full espresso menu and guest filters.</p>
+          </article>
+
+          <article class="location-card">
+            <h3>Galway Brew Bar</h3>
+            <p class="location-address">7 Harbour Road, Galway</p>
+            <p class="location-hours"><strong>Hours:</strong> Wed–Sun 9:00–17:00</p>
+            <p class="location-note">Small brew bar focused on slow coffee: V60, Chemex, Aeropress.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container two-column">
+        <div>
+          <h2>Online Orders</h2>
+          <p>We currently ship freshly roasted coffee across Ireland and most EU countries. Orders placed before 12:00 are typically roasted and dispatched the next working day.</p>
+        </div>
+        <div>
+          <h2>Wholesale & Offices</h2>
+          <p>Want Roast Republic in your café, restaurant, or office? We offer equipment advice, training, and custom blends.</p>
+          <p>Get in touch via our <a href="contact.html">contact form</a> and select <strong>Wholesale</strong> as your query type.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Roast Republic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
