@@ -15,7 +15,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="product.html" class="active">Products</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -86,6 +86,41 @@
             </ul>
             <p class="card-price">€6.90 / box</p>
           </article>
+         <article class="card product-card">
+            <h3>Cold Brew Concentrate</h3>
+            <p class="card-meta">Ready to mix</p>
+            <p class="card-text">Smooth, low-acidity concentrate perfect over ice or with milk.</p>
+            <ul class="product-details">
+              <li>500ml bottle</li>
+              <li>Up to 8 servings</li>
+            </ul>
+            <p class="card-price">€11.50 / bottle</p>
+          </article>
 
+          <article class="card product-card">
+            <h3>Midnight Decaf Pods</h3>
+            <p class="card-meta">Swiss Water® Process</p>
+            <p class="card-text">All the flavour, none of the caffeine – ideal for evenings.</p>
+            <ul class="product-details">
+              <li>Box of 10 pods</li>
+              <li>Caffeine-free</li>
+            </ul>
+            <p class="card-price">€7.20 / box</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Roast Republic. All rights reserved.</p>
+      <p class="footer-small">Prices and products are for demo only.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
