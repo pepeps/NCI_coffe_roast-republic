@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Roast Republic | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--header-->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">Roast <span>Republic</span></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--blog content starts here-->
+  <main>
+    <!--page header-->
+    <section class="page-header">
+      <div class="container">
+        <h1>Brew Guides &amp; Stories</h1>
+        <p>Learn how to get the best from your beans at home.</p>
+      </div>
+    </section>
+
+    <!--blog article-->
+    <section class="section">
+      <div class="container blog_grid">
+
+        <!--article in same grid x4-->
+        <!--add article words-->
+        <article class="blog_article">
+          <p class="blog_title">Brew Guide · Beginner</p>
+          <h2>How to Brew a Perfect Espresso </h2>
+          <p class="outline">Learn the essential techniques for pulling the perfect shot of espresso with ideal crema
+            and flavor balance. </p>
+          <a href="#" class="article_link">Read article </a>
+        </article>
+
+        <article class="blog_article">
+          <p class="blog_title">Brew Guide · Intermediate</p>
+          <h2>Mastering the Pour-Over</h2>
+          <p class="outline">Master the art of pour-over coffee with our detailed 5-step method for achieving clean,
+            flavorful V60 brews every time.</p>
+          <a href="#" class="article_link">Read article </a>
+        </article>
+
+        <article class="blog_article">
+          <p class="blog_title">Behind the Beans</p>
+          <h2>What “Single Origin” Really Means</h2>
+          <p class="outline">You see it on bags everywhere, but what does single origin actually guarantee? We break
+            down farm, region, and lot-level traceability.</p>
+          <a href="#" class="article_link">Read article </a>
+        </article>
+
+        <article class="blog_article">
+          <p class="blog_title">Sustainability</p>
+          <h2>How We Choose Our Partners</h2>
+          <p class="outline">We prioritize partnerships with farms and suppliers who share our commitment to ethical
+            sourcing and environmental stewardship.</p>
+          <a href="#" class="article_link">Read article </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+  <!--footer-->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Roast Republic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!--script-->
+  <!--update the year in the footer-->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+
+</body>
+
+</html>
