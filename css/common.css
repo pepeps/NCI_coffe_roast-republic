@@ -585,6 +585,18 @@ a {
   margin-top: 0;
 }
 
+.contact-image {
+  position: abu;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--border-soft);
+}
+
+
 /* Responsive tweaks for page layouts */
 @media (max-width: 720px) {
   .contact-layout {
