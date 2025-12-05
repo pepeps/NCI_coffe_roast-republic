@@ -336,6 +336,17 @@ body {
   letter-spacing: 1px;
 }
 
+.contact-image {
+  position: abu;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--border-soft);
+}
+
 /*Corresponding*/
 @media (max-width: 768px) {
   .nav-links {
